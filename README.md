@@ -14,6 +14,8 @@
 - 北京时间每天 `0:00` 定时编译, `Release` 中只保留不同架构的最新版本
 - 历史版本在 `Actions` 中选择一个已经运行完成且成功的 `workflow` 在页面底部可以看到 `Artifacts`, `Artifacts` 需要登录 Github 才能下载
 
+- build-istoreos.yml-------常用编译               build-istoreos2.yml--2--测试编译
+
 ## 支持架构
 
 ### RK33xx 架构
