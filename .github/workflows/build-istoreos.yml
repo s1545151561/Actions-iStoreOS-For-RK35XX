@@ -206,7 +206,7 @@ jobs:
         files: ${{ env.FIRMWARE }}/*
 
     - name: 删除运行记录
-      uses: xiaomeng9597/delete-workflow-runs@main
+      uses: s1545151561/delete-workflow-runs@main
       with:
         retain_days: 1
         keep_minimum_runs: 1
