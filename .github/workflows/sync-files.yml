@@ -22,8 +22,6 @@ jobs:
 
     - name: 注释软件源
       run: |
-        #注释应用过滤
-        sed -i 's/^.*OpenAppFilter.*/#&/' feeds.conf
         
         #移除应用过滤
         sed -i 's/CONFIG_PACKAGE_appfilter=y/CONFIG_PACKAGE_appfilter=n/' .config
