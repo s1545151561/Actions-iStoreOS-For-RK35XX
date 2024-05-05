@@ -12,7 +12,7 @@ on:
    - cron: 0 16 * * *
 
 env:
-  REPO_URL: https://github.com/istoreos/istoreos
+  REPO_URL: https://github.com/s1545151561/Actions-iStoreOS-For-RK35XX
   # REPO_BRANCH: main
   FEEDS_CONF: feeds.conf
   CONFIG_FILE: .config
