@@ -45,13 +45,13 @@ jobs:
         publish_branch: main
         publish_dir: ./
         user_name: 'GitHub Action'
-        user_email: 'github-actions[bot]@github.com'
+        user_email: '141800803+s1545151561@users.noreply.github.com'
         exclude_assets: ''
         keep_files: true
         commit_message: "Sync files"
 
     - name: 删除运行记录
-      uses: xiaomeng9597/delete-workflow-runs@main
+      uses: s1545151561/delete-workflow-runs@main
       with:
         retain_days: 1
         keep_minimum_runs: 1
