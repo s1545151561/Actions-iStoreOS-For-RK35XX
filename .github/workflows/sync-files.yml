@@ -46,7 +46,7 @@ jobs:
         publish_dir: ./
         user_name: 'GitHub Action'
         user_email: '141800803+s1545151561@users.noreply.github.com'
-        exclude_assets: ''
+        exclude_assets: ''github_pat_11BBZ3KYY06HPdrdXqaMGo_iE5MgrUYpu1scUxg4Jz4JuMBqHnYYbvACcKlOhahqEl4OSGDWFVJHwUzDP'
         keep_files: true
         commit_message: "Sync files"
 
