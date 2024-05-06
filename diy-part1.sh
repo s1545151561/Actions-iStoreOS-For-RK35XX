@@ -35,6 +35,9 @@ sed -i '$i uci set nlbwmon.@nlbwmon[0].refresh_interval=2s' package/lean/default
 sed -i '$i uci commit nlbwmon' package/lean/default-settings/files/zzz-default-settings
 chmod 755 package/luci-app-onliner/root/usr/share/onliner/setnlbw.sh
 
+./scripts/feeds update -a
+./scripts/feeds install -a
+
 # 修改版本为编译日期，数字类型。
 date_version=$(date +"%Y%m%d%H")
 echo $date_version > version
@@ -43,6 +46,3 @@ echo $date_version > version
 author="你爹呀"
 sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='%D %V ${date_version} by ${author}'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/OPENWRT_RELEASE.*/OPENWRT_RELEASE=\"%D %V ${date_version} by ${author}\"/g" package/base-files/files/usr/lib/os-release
-
-./scripts/feeds update -a
-./scripts/feeds install -a
