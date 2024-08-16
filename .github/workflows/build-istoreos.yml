@@ -35,6 +35,7 @@ jobs:
           # - istoreos-23.05
         ARCHITECTURE:
           - rk35xx
+          - mi3pro
         os:
           - ubuntu-22.04
 
